@@ -56,7 +56,7 @@ The `Algorithms` class contains static methods for various graph algorithms:
 - `bfs(const Graph& g, size_t start, std::vector<int>& dist, std::vector<int>& prev)`: Performs Breadth-First Search (BFS) on the graph starting from a given vertex.
 - `dfs(const std::vector<std::vector<int>>& adjMatrix, size_t u, std::vector<bool>& visited, std::vector<bool>& inStack)`: Performs Depth-First Search (DFS) on the graph to detect cycles.
 - `bfsBipartite(const Graph& g, size_t start, std::vector<int>& color, std::vector<int>& setA, std::vector<int>& setB)`: Performs BFS to check if the graph is bipartite.
-- `bellmanFord(const Graph& g, std::vector<int>& dist)`: Implements the Bellman-Ford algorithm to find the shortest paths from a source vertex to all other vertices.
+- `bellmanFord(const Graph& g, std::vector<int>& dist)`: Implements the Bellman-Ford algorithm to find if there is a negativ cycle.
 - `isConnected(const Graph& g)`: Checks if the graph is connected.
 - `shortestPath(const Graph& g, int start_i, int end_i)`: Finds the shortest path between two vertices in the graph.
 - `isContainsCycle(const Graph& g)`: Checks if the graph contains a cycle.
